@@ -4,6 +4,8 @@ No Flash or Frameworks required. Allowing for an amazing low bundle size and bla
 
 Built using the *Web Animations API*.
 
+**[Live Demo](https://johakr.github.io/html5-slot-machine/)**
+
 
 # Installation, Build & Deployment
 1) Clone repository
