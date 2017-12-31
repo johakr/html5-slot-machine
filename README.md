@@ -8,7 +8,7 @@ Built using the *Web Animations API*.
 
 ## Features
 * Fully responsive for great UX on mobile, web & fullscreen mode.
-* Autoplay functionality.
+* Autoplay functionality, which keeps running even if the game window is in background.
 
 
 ## Installation, Build & Deployment
