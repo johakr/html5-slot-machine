@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "author": "Johannes Kronmüller <hello@johakr.me> (https://johakr.me/)",
+  "repository": "johakr/html5-slot-machine",
   "scripts": {
     "build": "webpack -p",
     "start": "webpack-dev-server --open",
