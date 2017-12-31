@@ -6,6 +6,10 @@ Built using the *Web Animations API*.
 
 **[Live Demo](https://johakr.github.io/html5-slot-machine/)**
 
+## Features
+* Fully responsive for great UX on mobile, web & fullscreen mode.
+* Autoplay functionality.
+
 
 # Installation, Build & Deployment
 1) Clone repository
