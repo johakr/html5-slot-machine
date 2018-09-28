@@ -13,8 +13,7 @@
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "babel-loader": "8.0.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-loader": "^8.0.0",
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",

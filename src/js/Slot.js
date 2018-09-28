@@ -2,7 +2,7 @@ import Reel from './Reel.js';
 import Symbol from './Symbol.js';
 
 export default class Slot {
-  constructor(domElement) {
+  constructor(domElement, config = {}) {
     Symbol.preload();
 
     this.currentSymbols = [
@@ -29,6 +29,10 @@ export default class Slot {
     this.spinButton.addEventListener('click', () => this.spin());
 
     this.autoPlayCheckbox = document.getElementById('autoplay');
+
+    if (config.inverted) {
+      this.container.classList.add('inverted');
+    } 
   }
 
   spin() {

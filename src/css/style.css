@@ -66,3 +66,11 @@ input[type="checkbox"] {
   font-size: 40px;
   text-align: center;
 }
+
+#slot.inverted .reel {
+  transform: scaleY(-1);
+}
+
+#slot.inverted .reel > .icons > img {
+  transform: scaleY(-1);
+}
