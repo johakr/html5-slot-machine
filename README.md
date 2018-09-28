@@ -22,7 +22,7 @@ For configuration options see `config` object in [index.js](https://github.com/j
 
 | Property | Description | Default |
 | ------------- | ------------- | ------------- |
-| `inverted`  | Controls visual spinning direaction of reels. If false, reels will spin from bottom to top. If true, reels will spin from top to bottom | false |
+| `inverted`  | Controls visual spinning direction of reels. If false, reels will spin from bottom to top. If true, reels will spin from top to bottom | false |
 
 ## Credits
 Icons are created by [KPD Media](https://dribbble.com/shots/3517520-Star-Wars) and can be used for private and commercial purposes with no attribution required ([check license here](https://iconstore.co/icons/10-star-wars-icons/)).
