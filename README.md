@@ -13,9 +13,9 @@ Built using the *Web Animations API*.
 
 ## Installation, Build & Deployment
 1) Clone repository
-2) Run `npm install` or `yarn install`
-    - *Development*: run `npm start` or `yarn start` and go to `http://localhost:8080`
-    - *Production*: run `npm build` or `yarn build` and serve from `/dist`
+2) Run `npm install`
+    - *Development*: run `npm start` and go to `http://localhost:8080`
+    - *Production*: run `npm run build` and serve from `/dist`
     
 ## Configuration
 For configuration options see `config` object in [index.js](https://github.com/johakr/html5-slot-machine/blob/master/src/js/index.js)
