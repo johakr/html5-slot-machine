@@ -1,5 +1,5 @@
 # HTML5 Slot Machine
-[![Build Status](https://travis-ci.com/johakr/html5-slot-machine.svg?branch=master)](https://travis-ci.com/johakr/html5-slot-machine)
+[![Build Status](https://travis-ci.com/johakr/html5-slot-machine.svg?branch=master)](https://travis-ci.com/johakr/html5-slot-machine) [![Greenkeeper badge](https://badges.greenkeeper.io/johakr/html5-slot-machine.svg)](https://greenkeeper.io/)
 
 This is a modern proof of concept casino slot machine game, built using only vanilla HTML, CSS and JavaScript. 
 No Flash or Frameworks required. Allowing for an amazing low bundle size and blazing fast performance.
