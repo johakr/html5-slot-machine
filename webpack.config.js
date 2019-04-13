@@ -12,7 +12,7 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'dist'),
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
         template: './src/index.html',
     }),
