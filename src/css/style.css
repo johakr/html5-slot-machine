@@ -56,13 +56,13 @@ body {
   margin-right: 5px;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   width: 40px;
   height: 40px;
 }
 
 #jackpot {
-  color: #D5AD6D;
+  color: #d5ad6d;
   font-size: 40px;
   text-align: center;
 }
