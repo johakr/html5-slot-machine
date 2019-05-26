@@ -52,10 +52,7 @@ export default class Slot {
 
     return Promise.all(
       this.reels.map(reel => {
-        reel.renderSymbols(
-          this.currentSymbols[reel.idx],
-          this.nextSymbols[reel.idx],
-        );
+        reel.renderSymbols(this.nextSymbols[reel.idx]);
         return reel.spin();
       }),
     ).then(() => this.onSpinEnd());

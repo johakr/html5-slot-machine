@@ -36,7 +36,7 @@ export default class Reel {
     return 1 + Math.pow(this.idx / 2, 2);
   }
 
-  renderSymbols(currentSymbols, nextSymbols) {
+  renderSymbols(nextSymbols) {
     const fragment = document.createDocumentFragment();
 
     for (let i = 3; i < 3 + Math.floor(this.factor) * 10; i++) {

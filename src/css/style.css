@@ -21,8 +21,8 @@ body {
   display: flex;
   width: 100vw;
   height: calc((3 / 5) * 100vw);
-  max-height: calc(90vh - 50px);
-  max-width: calc((5 / 3) * (90vh - 50px));
+  max-height: calc(90vh - 50px - 40px);
+  max-width: calc((5 / 3) * (90vh - 50px - 40px));
 }
 
 .reel {
