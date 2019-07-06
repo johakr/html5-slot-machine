@@ -10,20 +10,20 @@
     "start": "webpack-dev-server --open --mode development"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.0.0",
     "file-loader": "^4.0.0",
     "html-webpack-plugin": "^3.0.6",
     "husky": "^3.0.0",
-    "lint-staged": "^9.0.0",
-    "prettier": "^1.17.1",
+    "lint-staged": "^9.1.0",
+    "prettier": "^1.18.2",
     "style-loader": "^0.23.1",
-    "webpack": "^4.32.2",
-    "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.5.0"
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
   },
   "husky": {
     "hooks": {
