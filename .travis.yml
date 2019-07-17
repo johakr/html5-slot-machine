@@ -3,6 +3,7 @@ node_js:
   - "lts/*"
 script:
   - npm run build
+install: case $TRAVIS_BRANCH in greenkeeper*) npm i;; *) npm ci;; esac;
 deploy:
   provider: pages
   skip_cleanup: true
