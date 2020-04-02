@@ -2,18 +2,18 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 1rem;
-  background-image: url('../assets/bg.jpg');
+  background-image: url("../assets/bg.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 @media only screen and (max-width: 1200px) {
   body {
-    background-image: url('../assets/bg_small.jpg');
+    background-image: url("../assets/bg_small.jpg");
   }
 }
 
@@ -56,7 +56,7 @@ body {
   margin-right: 5px;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   width: 40px;
   height: 40px;
 }

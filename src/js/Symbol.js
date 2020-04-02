@@ -14,20 +14,20 @@ export default class Symbol {
   }
 
   static preload() {
-    Symbol.symbols.forEach(symbol => new Symbol(symbol));
+    Symbol.symbols.forEach((symbol) => new Symbol(symbol));
   }
 
   static get symbols() {
     return [
-      'at_at',
-      'c3po',
-      'darth_vader',
-      'death_star',
-      'falcon',
-      'r2d2',
-      'stormtrooper',
-      'tie_ln',
-      'yoda',
+      "at_at",
+      "c3po",
+      "darth_vader",
+      "death_star",
+      "falcon",
+      "r2d2",
+      "stormtrooper",
+      "tie_ln",
+      "yoda",
     ];
   }
 
