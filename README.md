@@ -9,6 +9,9 @@ Built using the _Web Animations API_.
 
 **[Live Demo](https://johakr.github.io/html5-slot-machine/)**
 
+[![Run on Ainize](https://ainize.ai/images/run_on_ainize_button.svg)](https://ainize.web.app/redirect?git_repo=https://github.com/Laeyoung/html5-slot-machine)
+
+
 ## Features
 
 - Fully responsive for great UX on mobile, web & fullscreen mode.
