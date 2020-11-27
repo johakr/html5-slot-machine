@@ -35,6 +35,9 @@ body {
   width: calc(100% + 6px);
   margin: -3px 0 0 -3px;
   height: auto;
+
+  /* enable gpu accelaration, fixes iOS flicker */
+  transform: translate3d(0, 0, 0);
 }
 
 #controls {
