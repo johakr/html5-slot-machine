@@ -11,6 +11,9 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, "dist"),
   },
+  performance: {
+    hints: false,
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
