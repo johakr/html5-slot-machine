@@ -11,7 +11,6 @@ Built using the _Web Animations API_.
 
 [![Run on Ainize](https://ainize.ai/images/run_on_ainize_button.svg)](https://ainize.web.app/redirect?git_repo=https://github.com/Laeyoung/html5-slot-machine)
 
-
 ## Features
 
 - Fully responsive for great UX on mobile, web & fullscreen mode.
@@ -31,6 +30,7 @@ For configuration options see `config` object in [index.js](https://github.com/j
 | Property   | Description                                                                                                                            | Default |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | `inverted` | Controls visual spinning direction of reels. If false, reels will spin from bottom to top. If true, reels will spin from top to bottom | false   |
+| `award`    | Customize award                                                                                                                        | false   |
 
 ## Credits
 
