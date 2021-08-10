@@ -9,16 +9,19 @@ export default class Reel {
     this.symbolContainer.classList.add("icons");
     this.reelContainer.appendChild(this.symbolContainer);
 
+    const height_ = this.reelContainer.clientWidth;
+
     this.animation = this.symbolContainer.animate(
       [
-        { transform: "none", filter: "blur(0)" },
-        { filter: "blur(2px)", offset: 0.5 },
         {
-          transform: `translateY(-${
-            ((Math.floor(this.factor) * 10) /
-              (3 + Math.floor(this.factor) * 10)) *
-            100
-          }%)`,
+          top: "0px",
+          filter: "blur(0)",
+        },
+        {
+          filter: "blur(2px)",
+        },
+        {
+          top: `-${this.factor * 10 * height_}px`,
           filter: "blur(0)",
         },
       ],
@@ -35,16 +38,16 @@ export default class Reel {
   }
 
   get factor() {
-    return 1 + Math.pow(this.idx / 2, 2);
+    return 2 + this.idx;
   }
 
   renderSymbols(nextSymbols) {
     const fragment = document.createDocumentFragment();
 
-    for (let i = 3; i < 3 + Math.floor(this.factor) * 10; i++) {
+    for (let i = 3; i < 3 + this.factor * 10; i++) {
       const icon = new Symbol(
-        i >= 10 * Math.floor(this.factor) - 2
-          ? nextSymbols[i - Math.floor(this.factor) * 10]
+        i >= 10 * this.factor - 2
+          ? nextSymbols[i - this.factor * 10]
           : undefined
       );
       fragment.appendChild(icon.img);

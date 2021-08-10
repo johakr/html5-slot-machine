@@ -3,6 +3,9 @@ import Symbol from "./Symbol.js";
 
 export default class Slot {
   constructor(domElement, config = {}) {
+    this.config = { inverted: false };
+    Object.assign(this.config, config);
+
     Symbol.preload();
 
     this.currentSymbols = [
@@ -33,21 +36,24 @@ export default class Slot {
 
     this.autoPlayCheckbox = document.getElementById("autoplay");
 
-    if (config.inverted) {
+    if (this.config.inverted) {
       this.container.classList.add("inverted");
     }
   }
 
+  set award(s) {
+    this.config.award = s;
+  }
+
   spin() {
     this.onSpinStart();
-
     this.currentSymbols = this.nextSymbols;
     this.nextSymbols = [
-      [Symbol.random(), Symbol.random(), Symbol.random()],
-      [Symbol.random(), Symbol.random(), Symbol.random()],
-      [Symbol.random(), Symbol.random(), Symbol.random()],
-      [Symbol.random(), Symbol.random(), Symbol.random()],
-      [Symbol.random(), Symbol.random(), Symbol.random()],
+      [Symbol.random(), this.config.award || Symbol.random(), Symbol.random()],
+      [Symbol.random(), this.config.award || Symbol.random(), Symbol.random()],
+      [Symbol.random(), this.config.award || Symbol.random(), Symbol.random()],
+      [Symbol.random(), this.config.award || Symbol.random(), Symbol.random()],
+      [Symbol.random(), this.config.award || Symbol.random(), Symbol.random()],
     ];
 
     return Promise.all(
