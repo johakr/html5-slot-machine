@@ -32,7 +32,7 @@ For configuration options see `config` object in [index.js](https://github.com/j
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | `inverted` | Controls visual spinning direction of reels. If false, reels will spin from bottom to top. If true, reels will spin from top to bottom | false   |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| `award`    | award                                                                                                                                | false   |
+| `award`    | award                                                                                                                                  | false   |
 
 ## Credits
 
