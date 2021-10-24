@@ -69,7 +69,8 @@ export default class Slot {
 
     console.log("SPIN END");
 
-    if (this.autoPlayCheckbox.checked)
+    if (this.autoPlayCheckbox.checked) {
       return window.setTimeout(() => this.spin(), 200);
+    }
   }
 }
