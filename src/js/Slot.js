@@ -36,11 +36,11 @@ export default class Slot {
     if (config.inverted) {
       this.container.classList.add("inverted");
     }
+
+    this.config = config;
   }
 
   spin() {
-    this.onSpinStart();
-
     this.currentSymbols = this.nextSymbols;
     this.nextSymbols = [
       [Symbol.random(), Symbol.random(), Symbol.random()],
@@ -50,24 +50,26 @@ export default class Slot {
       [Symbol.random(), Symbol.random(), Symbol.random()],
     ];
 
+    this.onSpinStart(this.nextSymbols);
+
     return Promise.all(
       this.reels.map((reel) => {
         reel.renderSymbols(this.nextSymbols[reel.idx]);
         return reel.spin();
       })
-    ).then(() => this.onSpinEnd());
+    ).then(() => this.onSpinEnd(this.nextSymbols));
   }
 
-  onSpinStart() {
+  onSpinStart(symbols) {
     this.spinButton.disabled = true;
 
-    console.log("SPIN START");
+    this.config.onSpinStart?.(symbols);
   }
 
-  onSpinEnd() {
+  onSpinEnd(symbols) {
     this.spinButton.disabled = false;
 
-    console.log("SPIN END");
+    this.config.onSpinEnd?.(symbols);
 
     if (this.autoPlayCheckbox.checked) {
       return window.setTimeout(() => this.spin(), 200);

@@ -25,9 +25,11 @@ Built using the _Web Animations API_.
 
 For configuration options see `config` object in [index.js](https://github.com/johakr/html5-slot-machine/blob/master/src/js/index.js)
 
-| Property   | Description                                                                                                                            | Default |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| `inverted` | Controls visual spinning direction of reels. If false, reels will spin from bottom to top. If true, reels will spin from top to bottom | false   |
+| Property      | Description                                                                                                                            | Default   |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| `inverted`    | Controls visual spinning direction of reels. If false, reels will spin from bottom to top. If true, reels will spin from top to bottom | false     |
+| `onSpinStart` | Callback function invoked when spin starts with symbols pattern array `(symbols) => void`.                                             | undefined |
+| `onSpinEnd`   | Callback function invoked when spin ends with symbols pattern array `(symbols) => void`.                                               | undefined |
 
 ## Credits
 
