@@ -11,7 +11,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.0",
+    "@babel/core": "^7.20.2",
     "@babel/preset-env": "^7.15.0",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^4.0.0",
