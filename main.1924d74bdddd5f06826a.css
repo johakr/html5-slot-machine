@@ -28,6 +28,11 @@ body {
   overflow: hidden;
   width: 20%;
   height: 100%;
+  position: relative;
+}
+
+.reel > .icons {
+  position: relative;
 }
 
 .reel > .icons > img {
