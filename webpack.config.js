@@ -13,6 +13,11 @@ module.exports = {
   performance: {
     hints: false,
   },
+  devServer: {
+    headers: {
+      "Cache-Control": "no-store",
+    },
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({

@@ -11,14 +11,15 @@ export default class Reel {
 
     this.animation = this.symbolContainer.animate(
       [
-        { transform: "none", filter: "blur(0)" },
+        // We cannot animate translateY & filter at the same time in safari for some reasons,
+        // so we go with animating top & filter instead.
+        { top: 0, filter: "blur(0)" },
         { filter: "blur(2px)", offset: 0.5 },
         {
-          transform: `translateY(-${
-            ((Math.floor(this.factor) * 10) /
-              (3 + Math.floor(this.factor) * 10)) *
-            100
-          }%)`,
+          top: `calc((${Math.floor(this.factor) * 10} / 3) * -100% - (${
+            Math.floor(this.factor) * 10
+          } * 3px))`,
+
           filter: "blur(0)",
         },
       ],
@@ -61,6 +62,7 @@ export default class Reel {
       setTimeout(resolve, this.factor * 1000)
     );
 
+    this.animation.cancel();
     this.animation.play();
 
     return Promise.race([animationPromise, timeoutPromise]).then(() => {
