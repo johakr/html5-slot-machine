@@ -5,12 +5,13 @@ export default class Slot {
   constructor(domElement, config = {}) {
     Symbol.preload();
 
+    //Swapped death_stars to randomness @ beginning page
     this.currentSymbols = [
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
+      ["death_star", "c3po", "death_star"],
+      ["stormtrooper", "death_star", "c3po"],
+      ["death_star", "c3po", "death_star"],
+      ["c3po", "death_star", "stormtrooper"],
+      ["stormtrooper", "c3po", "death_star"],
     ];
 
     this.nextSymbols = [
@@ -72,7 +73,7 @@ export default class Slot {
     this.config.onSpinEnd?.(symbols);
 
     if (this.autoPlayCheckbox.checked) {
-      return window.setTimeout(() => this.spin(), 200);
+      return window.setTimeout(() => this.spin(), 300);
     }
   }
 }
