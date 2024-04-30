@@ -6,19 +6,15 @@ export default class Slot {
     Symbol.preload();
 
     this.currentSymbols = [
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
+      ["vlados", "vlados", "vlados"],
+      ["vlados", "vlados", "vlados"],
+      ["vlados", "vlados", "vlados"],
     ];
 
     this.nextSymbols = [
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
-      ["death_star", "death_star", "death_star"],
+      ["vlados", "vlados", "vlados"],
+      ["vlados", "vlados", "vlados"],
+      ["vlados", "vlados", "vlados"],
     ];
 
     this.container = domElement;
@@ -31,8 +27,6 @@ export default class Slot {
     this.spinButton = document.getElementById("spin");
     this.spinButton.addEventListener("click", () => this.spin());
 
-    this.autoPlayCheckbox = document.getElementById("autoplay");
-
     if (config.inverted) {
       this.container.classList.add("inverted");
     }
@@ -43,8 +37,6 @@ export default class Slot {
   spin() {
     this.currentSymbols = this.nextSymbols;
     this.nextSymbols = [
-      [Symbol.random(), Symbol.random(), Symbol.random()],
-      [Symbol.random(), Symbol.random(), Symbol.random()],
       [Symbol.random(), Symbol.random(), Symbol.random()],
       [Symbol.random(), Symbol.random(), Symbol.random()],
       [Symbol.random(), Symbol.random(), Symbol.random()],
@@ -70,9 +62,5 @@ export default class Slot {
     this.spinButton.disabled = false;
 
     this.config.onSpinEnd?.(symbols);
-
-    if (this.autoPlayCheckbox.checked) {
-      return window.setTimeout(() => this.spin(), 200);
-    }
   }
 }

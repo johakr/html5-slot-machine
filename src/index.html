@@ -2,27 +2,23 @@
 <html>
   <head>
     <title>HTML 5 Slot Machine</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/bootstrap@5.2.3/dist/css/bootstrap-reboot.min.css"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div id="slot">
-      <div id="jackpot">Jackpot: <span id="jp">5.555.555</span></div>
-      <div id="reels">
-        <div class="reel"></div>
-        <div class="reel"></div>
+      <div id="jackpot">Лудка его погубит...<span id="jp"></span></div>
+      <div class="reels" id="reels">
         <div class="reel"></div>
         <div class="reel"></div>
         <div class="reel"></div>
       </div>
       <div id="controls">
-        <button type="button" id="spin">SPIN</button>
-        <label>
-          <input type="checkbox" name="autoplay" id="autoplay" />
-          Autoplay
-        </label>
+        <button type="button" id="spin">СПИН</button>
       </div>
     </div>
   </body>
