@@ -22,13 +22,35 @@ body {
   height: calc((3 / 5) * 100vw);
   max-height: calc(90vh - 50px - 40px);
   max-width: calc((5 / 3) * (90vh - 50px - 40px));
+  justify-content: center;
+  gap: 10px;
 }
 
 .reel {
   overflow: hidden;
-  width: 20%;
+  width: 25%;
   height: 100%;
   position: relative;
+  margin-bottom: 10px;
+}
+
+#bebra {
+  position: relative;
+}
+
+#left {
+  top: 110px;
+  position: absolute;
+  font-size: 200px;
+  rotate: 90deg;
+}
+
+#right {
+  rotate: 270deg;
+  top: 110px;
+  right: 0;
+  position: absolute;
+  font-size: 200px;
 }
 
 .reel > .icons {
@@ -45,10 +67,10 @@ body {
 }
 
 #controls {
-  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 50px;
   height: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 5px 30px;
 }
@@ -63,6 +85,12 @@ body {
   margin-right: 5px;
 }
 
+#spin {
+  padding: 30px 60px;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
 input[type="checkbox"] {
   width: 40px;
   height: 40px;
@@ -70,8 +98,10 @@ input[type="checkbox"] {
 
 #jackpot {
   color: #d5ad6d;
-  font-size: 40px;
+  font-size: 80px;
+  font-weight: 700;
   text-align: center;
+  padding-bottom: 300px;
 }
 
 #slot.inverted .reel {
