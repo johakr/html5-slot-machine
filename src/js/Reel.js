@@ -36,7 +36,7 @@ export default class Reel {
   }
 
   get factor() {
-    return 1 + Math.pow(this.idx / 2, 2);
+    return 1 + Math.pow(this.idx / 1.5, 2);
   }
 
   renderSymbols(nextSymbols) {
